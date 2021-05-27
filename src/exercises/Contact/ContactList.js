@@ -14,7 +14,11 @@ const ContactList = ({ keyword, selected, selectList }) => {
           .filter((list) => list.name.indexOf(keyword) !== -1)
           .map((list, index) => (
             <li key={index}>
-              <button type="button" className={selected === list ? 'selected' : ''} onClick={() => handleClick(list)}>
+              <button
+                type="button"
+                className={selected === list ? 'selected' : ''}
+                onClick={() => handleClick(list)}
+              >
                 {list.name}
               </button>
             </li>

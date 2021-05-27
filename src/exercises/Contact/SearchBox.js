@@ -7,7 +7,13 @@ const SearchBox = ({ keyword, changeKeyword }) => {
 
   return (
     <div className="search-box">
-      <input type="text" className="inp-sch" onChange={handleChange} value={keyword} placeholder="검색어를 입력하세요." />
+      <input
+        type="text"
+        className="inp-sch"
+        onChange={handleChange}
+        value={keyword}
+        placeholder="검색어를 입력하세요."
+      />
     </div>
   );
 };

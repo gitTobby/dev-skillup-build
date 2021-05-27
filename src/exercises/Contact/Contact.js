@@ -23,10 +23,20 @@ const Contact = () => {
       <div className="contact-wrap">
         <div className="col left">
           <SearchBox keyword={keyword} changeKeyword={changeKeyword} />
-          <ContactList keyword={keyword} selected={selected} selectList={selectList} />
+          <ContactList
+            keyword={keyword}
+            selected={selected}
+            selectList={selectList}
+          />
         </div>
         <div className="col right">
-          <div className="details">{selected ? <Info keyword={keyword} selected={selected} /> : <Empty />}</div>
+          <div className="details">
+            {selected ? (
+              <Info keyword={keyword} selected={selected} />
+            ) : (
+              <Empty />
+            )}
+          </div>
         </div>
       </div>
     </div>
