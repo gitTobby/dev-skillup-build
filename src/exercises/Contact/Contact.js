@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container ex-contact">
       <h1 className="subject">김동혁의 연락처</h1>
       <div className="contact-wrap">
         <div className="col left">

@@ -1,8 +1,20 @@
-import React from 'react';
-import Exercises from '../exercises/Exercises';
+import React, { useState } from 'react';
+import Header from './layout/Header';
+import Main from './layout/Main';
 
 const AppRouter = () => {
-  return <Exercises />;
+  const [snb, setSnb] = useState(false);
+
+  const openSnb = (status) => {
+    setSnb(status);
+  };
+
+  return (
+    <>
+      <Header snb={snb} openSnb={openSnb} />
+      <Main snb={snb} openSnb={openSnb} />
+    </>
+  );
 };
 
 export default AppRouter;
